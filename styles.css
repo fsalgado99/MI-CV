@@ -2,7 +2,10 @@ body {
   font-family: "Open Sans", sans-serif;
   /* color: #272829; */
 }
-
+html
+{
+  scroll-behavior: smooth;
+}
 a {
   color: #149ddd;
   text-decoration: none;
@@ -40,7 +43,6 @@ p
   left: 0;
   bottom: 0;
   width: 300px;
-  transition: all ease-in-out 0.5s;
   z-index: 9997;
   transition: all 0.5s;
   padding: 0 15px;
@@ -83,18 +85,19 @@ p
 }
 
 #header .perfil .red-social a {
-  font-size: 20px;
-  margin-top:8px;
-
+  font-size: 21px;
+  margin-top: 8px;
   display: inline-block;
   background: #212431;
   color: #fff;
   line-height: 1;
-  padding: 8px 15px;
-  margin-right: 4px;
+  padding: 12.5px 0px;
+  margin: 8px 23px;
+  /* margin-right: 4px; */
   border-radius: 50%;
-  width: 16px;
-  height: 26px;
+  width: 45px;
+  height: 22px;
+  justify-content: center;
   text-align: center;
   transition: 0.3s;
 }
@@ -124,12 +127,12 @@ p
 --------------------------------------------------------------*/
 /* menu de Navigacion */
 .nav-menu {
-  padding: 30px 0 0 0;
+  padding: 12px 0 0 0;
   text-align: center;
   
 }
 .nav-menu * {
-  margin: 0 8px;
+  margin: 0 6px;
   padding: 0;
   list-style: none;
 
@@ -145,10 +148,10 @@ p
   padding: 12px 15px;
   margin-bottom: 8px;
   transition: 0.3s;
-  font-size: 15px;
+  font-size: 23px;
 }
 .nav-menu a i, .nav-menu a:focus i {
-  font-size: 24px;
+  font-size: 29px;
   padding-right: 8px;
   color: #fff;
 }
@@ -216,29 +219,24 @@ p
   z-index: 2;
   min-width: 300px;
   text-align: center;
+  top:19rem;
+ 
+  
 
 
 }
-#home h1 {
-  margin: 0 0 10px 0;
-  font-size: 64px;
-  font-weight: 700;
-  line-height: 56px;
-  color: #e3ef5c;
-  padding-top:16.5rem;
-}
+
 #home p {
-  color: #fff;
-  margin-bottom: 50px;
-  font-size: 26px;
-  font-family: "Poppins", sans-serif;
+
+  color: #e3ef5c;
+  /* margin-bottom: 50px; */
+  font-size: 35px;
+  padding: 0;
+  margin:0;
+  /* font-family: "Poppins", sans-serif; */
+  font-family:"marcelle script";
 }
-#home p span {
-  color: #fff;
-  padding-bottom: 4px;
-  letter-spacing: 1px;
-  border-bottom: 3px solid #149ddd;
-}
+
 @media (min-width: 1024px) {
   #home {
     background-attachment: fixed;
@@ -316,15 +314,15 @@ section {
 /*****************************************************************************************************/
 .diHabilidades h3
 {
-  /* font-size: 25px; */
+  font-size: 15px !important;
   padding-top:20px;
   margin-bottom:5px;
   
 }
 .barra
 {
-  width:80%;
-  height: 25px;
+  width:70%;
+  height: 20px;
   background: rgb(128, 122, 122);
   border-radius: 10px;
   box-shadow: 20px 25px 25px rgba(0,0,0,01);
@@ -335,7 +333,7 @@ section {
 {
   
   width: var(--w);
-  height: 25px;
+  height: 20px;
   background: rgb(46, 25, 124);
   border-radius: 10px;
   animation:aumentar 5s ease;
@@ -378,3 +376,127 @@ section {
     }
   
 }
+/*--------------------------para 1023 a 1150px------------------------*/
+@media screen and (min-width: 1023px) and (max-width:1150px)
+{
+  #header .perfil .red-social a {
+    font-size: 21px;
+    padding: 9.5px 0px;
+    margin: 8px 6px;
+    width: 42px;
+    height: 21px;
+  
+}
+#header .perfil 
+  #home h1
+{
+  font-size: 50px
+}
+  h3
+{
+  font-size: 18px;
+
+}
+p
+{
+  font-size:14.5px;
+}
+  .mobile-nav-toggle
+  {
+    visibility: hidden;
+  }
+  #header 
+  {
+    width:240px
+  }
+  #header img 
+  {
+      margin: 15px auto;
+      display: block;
+      width: 8rem;
+      border: 5.5px solid #818370;
+      border-radius: 5.5rem;
+
+  }
+  .nav-menu *
+  {
+        margin:0 0;
+
+  }
+  .nav-menu a {
+    display: flex;
+    align-items: center;
+    color: #a8a9b4;
+    padding: 12px 15px;
+    margin-bottom: 8px;
+    transition: 0.3s;
+    font-size: 19px;
+}
+.nav-menu a i, .nav-menu a:focus i {
+  font-size: 24px;
+  padding-right: 8px;
+  color: #fff;
+}
+
+#main {
+  margin-left:17rem;
+}
+
+#home .home-container {
+  padding-left: 23rem;
+  padding-right: 4rem;
+  top:12rem;
+  
+  
+  }
+#home h1 {
+  margin: 0 0 10px 0;
+  font-size: 54px;
+  font-weight: 700;
+  line-height: 56px;
+  color: #fff;
+  /* padding-top: 10rem; */
+}
+}
+@media  screen and ( min-width: 1151px )
+{
+  #home .home-container {
+    padding-left: 23rem;
+    padding-right: 4rem;
+    top:40%;
+    
+    
+    }
+  
+}
+/*-----------------------FIN para 1023 a 1150px------------------------*/
+/*-----------------------------PARA CELULAR----------------------------*/
+@media  screen and ( min-width: 0px )and (max-width:420px)
+{
+  #home .home-container
+   {
+   
+    top:11rem;
+    padding-left:0 ;
+    padding-right: 0 ;
+   }
+   #home p
+   {
+     font-size:21px;
+   }
+  
+}
+
+.animationToggle
+{
+  transition: all 500ms linear;
+
+}
+
+
+/* @keyframes deslizarIzDer{
+  0% {width:0%;}
+  100% {width:var(--w);}
+  
+}  */
+
