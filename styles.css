@@ -484,6 +484,36 @@ p
    {
      font-size:21px;
    }
+   #header
+   {
+    width: 282px;
+   }
+   #header img 
+   {
+       margin: 15px auto;
+       display: block;
+       width: 7rem;
+       border: 4.5px solid #818370;
+       border-radius: 5.3rem;
+ 
+   }
+   #header .nav-menu a {
+    align-items: center;
+    color: #a8a9b4;
+    padding: 12px 15px;
+    margin-bottom: 8px;
+    transition: 0.3s;
+    font-size: 20px;
+}
+#header .perfil .red-social a {
+  font-size: 20px;
+  margin-top: 8px; 
+  padding: 9.5px 0px;
+  margin:8px 18px;
+  width: 45px;
+  height: 22px;
+  
+}
   
 }
 
