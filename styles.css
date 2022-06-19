@@ -467,6 +467,10 @@ p
     
     
     }
+    .mobile-nav-toggle
+  {
+    visibility: hidden;
+  }
   
 }
 /*-----------------------FIN para 1023 a 1150px------------------------*/

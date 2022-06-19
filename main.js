@@ -63,7 +63,6 @@ $(document).ready(function()
 
     
     var contador=1;  /*necesario para hacer la animacion*/
-    var cont2=1;
     $('.mobile-nav-toggle').click(function()
     {
         if(dispositivos.esMovil==true || dispositivos.esIPad==true|| dispositivos.esTablet==true)       
@@ -73,32 +72,15 @@ $(document).ready(function()
             if(contador==1)
             {
                 $('#hedaer').animate('animationToggle');
-                (
-                    {
-                        left:'0'
-    
-                    }
-                );
+            
                 contador=0;
             }
             else
             {       
                 contador=1;   
                     $('#hedaer').animate('animationToggle')
-                    (
-                        {
-                            left:'-100%'
-        
-                        }
-                    );
-    
+                   
             }
-        }
-        else
-        {
-            
-        
-
         }
        
     })    
@@ -109,63 +91,23 @@ $(document).ready(function()
         {
             $('#header').toggle('animationToggle');
 
-        }
-        // else
-        // {
-        //     $('#header').toggle('animationToggle');
-
-        // }
-
-       
+        }       
 
     })
-   /*--------------------------para scroll---------------------------------*/
-//    window.addEventListener('scroll',function()
-//    {
-       
-//        let ubicacionPrincipal=window.pageYOffset
-//        let $header =document.querySelector('#header')
-
-//        window.addEventListener('scroll',function()
-//        {
-
-//            let ubicacionActual=window.pageYOffset
-//            if(ubicacionPrincipal>=ubicacionActual)
-//            {
-//             if(dispositivos.esMovil==true || dispositivos.esIPad==true|| dispositivos.esTablet==true)  
-//             {
-//                  $('#header').toggle();
- 
-//             }  
-            
-            
-//             else
-//             {
-                
-//              $('#header').toggle();
- 
-//             }
-               
-//            }
-          
-          
-
-//        })
-//        if(contador==1)
-//        {
-//         $('.listMenu').click(function() 
-//         {
-//             $('#header').toggle('animationToggle');
     
-//         })
-
-//        }
-//        else
-//        {
-//            return false;
-//        }
-
-       
-//    })
+    
+   /*--------------------------para scroll---------------------------------*/
+//    window.onscroll=function()
+//    {
+//     if(dispositivos.esMovil || dispositivos.esIPad || dispositivos.esTablet || dispositivos.esIphone || contador==1)
+//     {
+//                     $('#header').toggle('animationToggle');
+//                     // contador = 0;
+                    
+//     }
+   
+//    }  
+   
+  
 });
 
